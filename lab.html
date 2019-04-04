@@ -2,6 +2,7 @@
   <head>
     <title>过敏原检测-模拟实验</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//pengoo2019.github.io/all.css" media="screen">
     
     <style type="text/css">
       body {
@@ -32,7 +33,14 @@
     
     <div class="container content">
       <p>正在建设中</p>
-
+     有些人在问：“为什么工厂检测没有实验室检测结果准确呢？”
+     当然，在实验条件都一样的情况下，有些专业实验室检测的结果
+或许更“可靠”，这有没有什么科学依据，我们学过概率的朋友可能都知道这个事例，假设一个工厂生产的产品有0.1‰的瑕疵率，而该工厂采用某种检测方法或产品，其误检率和漏检率分别是5%和1%，在这种情况下检测出来的“阳性”确实是有问题的产品，其概率是多少呢？
+假设A:被检测样品有问题；B:检测结果“阳性”
+也就是说求检测结果为“阳性”的样品确实有问题的概率
+由著名的贝叶斯公式：
+p(A|B)=p(A)p(B|A)/(p(A)p(B|A)+p(CuA)p(B|CuA))=(0.0001*0.95)/(0.0001*0.95+0.9999*0.01)=0.0094
+好了，我们看到了，我们认为检测结果为“阳性”的样品应该为接近100%有问题的样品，但事实是只有0.9%的概率吻合。
 
     </div>
     <script type="text/javascript" src="//tajs.qq.com/stats?sId=30493657" charset="UTF-8"></script>

@@ -30,32 +30,8 @@
     
   </head>
      
-<body 
-ondragstart="window.event.returnValue=false;return false;" oncontextmenu="window.event.returnValue=false;return false;" onselectstart="event.returnValue=false;return false;"
-function stopDefault(e) {
-	if ( e && e.preventDefault ){
-    
-        e.preventDefault();
+<body>
 
-        } else { 
-     	 window.event.returnValue = false;
-
-        } 
- 
-}>
-
-<script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-
-$('#video').bind('contextmenu',function() { return false;});
-
-});
-
-</script>
-<noscript><iframe src="*.htm"></iframe></noscript>
 <style>
 .bizmail_loginpanel{font-size:12px;width:300px;height:auto;border:1px solid #cccccc;background:#ffffff;}
 .bizmail_LoginBox{padding:10px 15px;}

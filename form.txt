@@ -1,0 +1,4 @@
+<script src="//res.crossincode.com/js/jquery-1.11.1.min.js"></script>
+    <script src="//res.crossincode.com/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//res.crossincode.com/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="//res.crossincode.com/css/my-style.css" />

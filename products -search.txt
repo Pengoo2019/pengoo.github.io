@@ -1,0 +1,13 @@
+$def with (product)
+<h4><a href="/">返回首页</a></h4>
+<h1>欧陆科技过敏原检测试剂盒</h1>
+
+<h1>$product.title</h1>
+<hr>
+
+<p>说明书：$product.insert</p>
+
+<p>计算表格：$product.chart</p>
+
+<p>简介：$product.abstract</p>
+<img src="/static/poster/$(product.id).jpg">

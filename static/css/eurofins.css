@@ -1,0 +1,184 @@
+﻿#switcher-store.switcher strong.label {
+	display: none;
+	width: auto;
+	height: auto;
+	position: relative;
+	margin-top: 0
+}
+
+.page-header .block-search input {
+	border-radius: 25px;
+}
+
+#maincontent .column.main {
+	min-height: 0;
+	padding-bottom: 0px;
+}
+
+footer .footer-middle-2 {
+	padding: 0 0 40px 0;
+}
+
+#new_product .product-item-info .product-item-photo {
+	border: 1px solid #003399;
+}
+
+.products-grid .product-item-details .product-item-actions .tocart,
+.products-grid .product-item-details .product-item-actions .tocart:hover {
+	background-color: #ff6600 !important;
+	border: 0px;
+	color: #fff;
+}
+
+.product-item .tocart:before {
+	content: '';
+	margin-right: 0;
+}
+
+.product-item .tocart span {
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.owl-bottom-narrow .owl-controls {
+	position: relative;
+}
+
+.product-item-name {
+	height: 40px;
+}
+
+.cms-info h2 {
+	margin: 40px 0;
+}
+
+.cms-info h3 {
+	margin-bottom: 20px;
+}
+
+.category-description h3, .cms-info h3, .cms-info h2 {
+	color: #003399;
+}
+
+.category-description h4, .cms-info h4 {
+	color: #003399;
+	font-weight: 600;
+}
+
+.catalog-category-view .sidebar-main .block-category-list {
+	margin-bottom: 20px;
+}
+
+.catalog-category-view .sidebar-main .block-category-list .block-content {
+	background-color: white;
+	border-radius: 0;
+}
+
+.catalog-category-view .sidebar-main .block-category-list .block-title {
+	border-radius: 0;
+}
+
+.message.global.cookie {
+	background-color: #003399;
+	color: white;
+}
+
+.message.global.cookie a, .message.global.cookie a:hover {
+	color: yellow;
+}
+
+#btn-cookie-allow {
+	background-color: #f0f0ed;
+	color: #003399;
+}
+
+.block.related .field.choice {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    z-index: 999;
+}
+
+.block.related button.action.select {
+	line-height: 18px;
+	height: 18px;
+}
+
+@media (min-width: 768px) { 
+ .navigation,
+ .page-wrapper > .breadcrumbs,
+ .page-header .header.panel,
+ .header.content,
+ .footer.content,
+ .page-wrapper > .widget,
+ .page-wrapper > .page-bottom,
+ .block.category.event,
+ .top-container,
+ .page-main {
+   max-width: 1140px;
+ }
+}
+
+/* Changed to width instead of max-width so the container under full screen view does not extend more than the header/footer */
+@media (min-width: 768px) {
+ .container {
+   width: 100%;
+ }
+}
+
+
+/* Modify hamburger menu size and position */
+
+@media (max-width: 767px) {
+.page-header.type16 .nav-toggle:before {
+    font-size: 25px;
+  }
+}
+
+.page-header.type16 .nav-toggle {
+  float: left;
+}
+
+/* Putting new arrivals into its appropriate position */
+
+@media only screen and (max-width: 767px) {
+  .nav-open .page-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Change so hamburger menu does not go under the menu*/
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .nav-open .nav-sections {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .nav-open .page-wrapper {
+    left: 80%;
+  }
+}
+
+/* Clear the small menu button from the popup window before the Menu text either clear this whole class or set display to none */
+
+@media (max-width: 767px) {
+  header.page-header .nav-sections-item-title[aria-controls="store.menu"] > a:before {
+    display: none;
+  }
+}
+
+/* Search Extender */
+.item.gallery-item {
+    margin: 5px 0;
+    height: 90px;
+}
+
+.item.gallery-item .gallery-item-thumbnail {
+    float: left;
+    margin-right: 5px;
+    border: 1px solid lightgray;
+}

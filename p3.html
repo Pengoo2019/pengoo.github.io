@@ -621,7 +621,7 @@ require([
                 }
 
                 function setData(data) {
-                    data = encodeURIComponent(JSON.stringify(data));
+                    data = en鳕鱼eURIComponent(JSON.stringify(data));
                     createCookie(type === 'session' ? getSessionName() : 'localStorage', data, 365);
                 }
 
@@ -632,7 +632,7 @@ require([
                 function getData() {
                     var data = type === 'session' ? readCookie(getSessionName()) : readCookie('localStorage');
 
-                    return data ? JSON.parse(decodeURIComponent(data)) : {};
+                    return data ? JSON.parse(de鳕鱼eURIComponent(data)) : {};
                 }
 
                 function getSessionName() {
@@ -946,318 +946,13 @@ require([
             }
         );
     </script>
-
-<div class="page-wrapper"><header class="page-header type16 header-newskin" >
-    <div class="panel wrapper">
-        <div class="panel header">
-            <a class="action skip contentarea" href="#contentarea"><span>Skip to Content</span></a>
-            	    <div class="switcher store switcher-store" id="switcher-store">
-    <strong class="label switcher-label"><span>Select Store</span></strong>
-    <div class="actions dropdown options switcher-options">
-                                            <div class="action toggle switcher-trigger"
-                 role="button"
-                 tabindex="0"
-                 data-mage-init='{"dropdown":{}}'
-                 data-toggle="dropdown"
-                 data-trigger-keypress-button="true"
-                 id="switcher-store-trigger">
-                <strong>
-                    <span>Asia</span>
-                </strong>
-            </div>
-                                                                                        <ul class="dropdown switcher-dropdown" data-target="dropdown">
-                                        <li class="switcher-option">
-                    <a href="#"
-                       data-post='{"action":"https:\/\/www.eurofins-technologies.com\/stores\/store\/redirect\/","data":{"___store":"mea_en","___from_store":"as_en","uenc":"aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQmX19fc3RvcmU9bWVhX2Vu"}}'>
-                        Africa-Middle East                    </a>
-                </li>
-                                                                            <li class="switcher-option">
-                    <a href="#"
-                       data-post='{"action":"https:\/\/www.eurofins-technologies.com\/stores\/store\/redirect\/","data":{"___store":"anz_en","___from_store":"as_en","uenc":"aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQmX19fc3RvcmU9YW56X2Vu"}}'>
-                        Australia-New Zealand                    </a>
-                </li>
-                                                    <li class="switcher-option">
-                    <a href="#"
-                       data-post='{"action":"https:\/\/www.eurofins-technologies.com\/stores\/store\/redirect\/","data":{"___store":"casa_en","___from_store":"as_en","uenc":"aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQmX19fc3RvcmU9Y2FzYV9lbg,,"}}'>
-                        Central&amp;South America                    </a>
-                </li>
-                                                    <li class="switcher-option">
-                    <a href="#"
-                       data-post='{"action":"https:\/\/www.eurofins-technologies.com\/stores\/store\/redirect\/","data":{"___store":"eu_en","___from_store":"as_en","uenc":"aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQmX19fc3RvcmU9ZXVfZW4,"}}'>
-                        Europe                    </a>
-                </li>
-                                                    <li class="switcher-option">
-                    <a href="#"
-                       data-post='{"action":"https:\/\/www.eurofins-technologies.com\/stores\/store\/redirect\/","data":{"___store":"na_en","___from_store":"as_en","uenc":"aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQmX19fc3RvcmU9bmFfZW4,"}}'>
-                        North America                    </a>
-                </li>
-                                </ul>
-    </div>
-</div>
-                        <ul class="header links">        <li class="greet welcome" data-bind="scope: 'customer'">
-            <!-- ko if: customer().fullname  -->
-            <span data-bind="text: new String('Welcome, %1!').replace('%1', customer().fullname)">
-            </span>
-            <!-- /ko -->
-            <!-- ko ifnot: customer().fullname  -->
-            <span data-bind='html:"Welcome to our webshop"'></span>
-                        <!-- /ko -->
-        </li>
-        <script type="text/x-magento-init">
-        {
-            "*": {
-                "Magento_Ui/js/core/app": {
-                    "components": {
-                        "customer": {
-                            "component": "Magento_Customer/js/view/customer"
-                        }
-                    }
-                }
-            }
-        }
-        </script>
-    <li class="item link compare hide" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
-    <a class="action compare" title="Compare Products"
-       data-bind="attr: {'href': compareProducts().listUrl}, css: {'': !compareProducts().count}"
-    >
-    	<em class="porto-icon-chart hidden-xs"></em>
-        Compare        (<span class="counter qty" data-bind="text: compareProducts().countCaption"></span>)
-    </a>
-</li>
-<script type="text/x-magento-init">
-{"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
-</script>
-<li class="authorization-link" data-label="or">
-    <a href="https://www.eurofins-technologies.com/customer/account/login/referer/aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQ%2C/">
-        Sign In    </a>
-</li>
-<li><a href="https://www.eurofins-technologies.com/customer/account/create/" >Create an Account</a></li></ul>        </div>
-    </div>
-    <div class="header content">
-    <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
-    <a class="logo" href="https://www.eurofins-technologies.com/" title="Eurofins Technologies">
-        <img src="static/picture/eurofins_technologies.png"
-             alt="Eurofins Technologies"
-             width="300"             height="56"        />
-    </a>
-    
-<div data-block="minicart" class="minicart-wrapper">
-    <a class="action showcart" href="https://www.eurofins-technologies.com/checkout/cart/"
-       data-bind="scope: 'minicart_content'">
-        <span class="text">Cart</span>
-        <span class="counter qty empty"
-              data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-            <span class="counter-number">
-            <!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko -->
-            <!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko -->
-            </span>
-            <span class="counter-label">
-                <!-- ko i18n: 'items' --><!-- /ko -->
-            </span>
-        </span>
-    </a>
-            <div class="block block-minicart empty"
-             data-role="dropdownDialog"
-             data-mage-init='{"dropdownDialog":{
-                "appendTo":"[data-block=minicart]",
-                "triggerTarget":".showcart",
-                "timeout": "2000",
-                "closeOnMouseLeave": false,
-                "closeOnEscape": true,
-                "triggerClass":"active",
-                "parentClass":"active",
-                "buttons":[]}}'>
-            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
-                <!-- ko template: getTemplate() --><!-- /ko -->
-            </div>
-        </div>
-        <script>
-        window.checkout = {"shoppingCartUrl":"https:\/\/www.eurofins-technologies.com\/checkout\/cart\/","checkoutUrl":"https:\/\/www.eurofins-technologies.com\/checkout\/","updateItemQtyUrl":"https:\/\/www.eurofins-technologies.com\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/www.eurofins-technologies.com\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/www.eurofins-technologies.com\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"customerLoginUrl":"https:\/\/www.eurofins-technologies.com\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cuZXVyb2ZpbnMtdGVjaG5vbG9naWVzLmNvbS9wcm9kdWN0cy9hbGxlcmdlbnMvYWxsZXJnZW4tZWxpc2Eta2l0cy5odG1sP3A9MyZwcm9kdWN0X2xpc3RfbGltaXQ9MjQ%2C\/","isRedirectRequired":false,"autocomplete":"off","storeId":"3","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.eurofins-technologies.com\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.eurofins-technologies.com\/captcha\/refresh\/","isRequired":false}}};
-    </script>
-    <script type="text/x-magento-init">
-    {
-        "[data-block='minicart']": {
-            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals","children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}}}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
-        "*": {
-            "Magento_Ui/js/block-loader": "https://www.eurofins-technologies.com/pub/static/version1582709940/frontend/Ixenit/eurofins/en_US/images/loader-1.gif"
-        }
-    }
-    </script>
-</div>
-
-
-    <div class="block block-search">
-    <div class="block block-title"><strong>Search</strong></div>
-    <div class="block block-content">
-        <form class="form minisearch" id="search_mini_form" action="https://www.eurofins-technologies.com/catalogsearch/result/" method="get">
-            <div class="field search">
-                <label class="label" for="search" data-role="minisearch-label">
-                    <span>Search</span>
-                </label>
-                <div class="control">
-                    <input id="search"
-                           data-mage-init='{"quickSearch":{
-                                "formSelector":"#search_mini_form","minSearchLength": 10000,
-                                "url":"https://www.eurofins-technologies.com/search/ajax/suggest/",
-                                "destinationSelector":"#search_autocomplete"}
-                           }'
-                           type="text"
-                           name="q"
-                           value=""
-                           placeholder="Search..."
-                           class="input-text"
-                           maxlength="128"
-                           role="combobox"
-                           aria-haspopup="false"
-                           aria-autocomplete="both"
-                           autocomplete="off"/>
-                    <div id="search_autocomplete" class="search-autocomplete"></div>
-                    <div class="nested">
-    <a class="action advanced" href="https://www.eurofins-technologies.com/catalogsearch/advanced/" data-action="advanced-search">
-        Advanced Search    </a>
-</div>
-                </div>
-            </div>
-            <div class="actions">
-                <button type="submit"
-                        title="Search"
-                        class="action search">
-                    <span>Search</span>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
-        </div>
-        <div class="sections nav-sections">
-                <div class="section-items nav-sections-items" data-mage-init='{"tabs":{"openedState":"active"}}'>
-                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
-                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Menu</a>
-                </div>
-                <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content">
-<nav class="navigation sw-megamenu " role="navigation">
-    <ul>
-        
-    <li class="ui-menu-item level0">
-        <a href="https://www.eurofins-technologies.com/" class="level-top"><span>Home</span></a>
-    </li>
-<li class="ui-menu-item level0 fullwidth parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products.html" class="level-top" title="Products"><span>Products</span></a><div class="level0 submenu"><div class="container"><div class="row"><ul class="subchildmenu col-md-12 mega-columns columns4"><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/allergens.html" title="Allergens"><span>Allergens</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/food-pathogens.html" title="Food Pathogens"><span>Food Pathogens</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/gmos.html" title="GMOs"><span>GMOs</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/mycotoxins.html" title="Mycotoxins"><span>Mycotoxins</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/veterinary-drug-residues.html" title="Veterinary Drug Residues"><span>Veterinary Drug Residues</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/water.html" title="Environmental & Water Testing"><span>Environmental & Water Testing</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/veterinary-diagnostics.html" title="Veterinary Diagnostics"><span>Veterinary Diagnostics</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/animal-species.html" title="Animal Species"><span>Animal Species</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/vitamins.html" title="Vitamins"><span>Vitamins</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/culture-media.html" title="Culture Media"><span>Culture Media</span></a></li><li class="ui-menu-item level1 "><a href="https://www.eurofins-technologies.com/products/environmental-sampling-devices.html" title="Environmental Sampling Devices"><span>Environmental Sampling Devices</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/viruses.html" title="Viruses"><span>Viruses</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.eurofins-technologies.com/products/covid-19-ivd.html" title="COVID-19 Immunoassays"><span>COVID-19 Immunoassays</span></a></li></ul></div></div></div></li><li class="ui-menu-item level0 fullwidth "><a href="https://www.eurofins-technologies.com/about-us.html" class="level-top" title="About us"><span>About us</span></a></li>
-    <li class="ui-menu-item level0 fullwidth parent">
-        <div class="open-children-toggle"></div>
-        <a href="/" class="level-top" title="Publications"><span>Publications</span></a>
-        <div id="publications-submenu" class="level0 submenu">
-        <div class="container">
-        <div class="row">
-          <ul class="subchildmenu col-md-12 mega-columns columns4">
-            <li class="ui-menu-item level1 parent ">
-              <div class="open-children-toggle"></div>
-              <a href="/publication-categories"" title="Scientific Publications"><span>Scientific Publications</span></a>
-            </li>
-            <li class="ui-menu-item level1 parent ">
-              <div class="open-children-toggle"></div>
-             <a href="/flyers-catalogues" title="Catalogue Flyers"><span>Catalogue Flyers</span></a>
-            </li>
-            <li class="ui-menu-item level1 parent ">
-               <div class="open-children-toggle"></div>
-               <a href="/press" title="Press"><span>Press</span></a>
-            </li>
-          </ul>
-        </div>
-        </div>
-        </div>
-    </li>
-
-<li class="ui-menu-item level0 fullwidth parent">
-        <div class="open-children-toggle"></div>
-        <a href="/" class="level-top" title="Services"><span>Services</span></a>
-        <div id="services-submenu" class="level0 submenu">
-        <div class="container">
-        <div class="row">
-          <ul class="subchildmenu col-md-12 mega-columns columns4">
-            <li class="ui-menu-item level1 parent">
-              <div class="open-children-toggle"></div>
-              <a href="/trainings"" title="Trainings"><span>Trainings</span></a>
-            </li>
-            <li class="ui-menu-item level1 parent">
-              <div class="open-children-toggle"></div>
-             <a href="/custom-manufacturing" title="Custom Manufacturing"><span>Custom Manufacturing</span></a>
-            </li>
-                <li class="ui-menu-item level1 parent">
-              <div class="open-children-toggle"></div>
-             <a href="/eurofins-academy" class="level-top"><span>Eurofins Academy</span></a>
-            </li>
-          </ul>
-        </div>
-        </div>
-        </div>
-    </li>
-<li class="ui-menu-item level0 fullwidth parent">
-        <div class="open-children-toggle"></div>
-        <a href="/" class="level-top" title="Instruments"><span>Instruments</span></a>
-        <div id="instruments-submenu" class="level0 submenu">
-        <div class="container">
-        <div class="row">
-          <ul class="subchildmenu col-md-12 mega-columns columns4">
-            <li class="ui-menu-item level1 parent ">
-              <div class="open-children-toggle"></div>
-              <a href="/thunderbolt-r.html"" title="Thunderbolt"><span>Thunderbolt</span></a>
-            </li>
-            <li class="ui-menu-item level1 parent ">
-              <div class="open-children-toggle"></div>
-             <a href="/bolt.html" title="The Bolt"><span>The Bolt</span></a>
-            </li>
-        </div>
-        </div>
-        </div>
-</li>
-    <li class="ui-menu-item level0">
-        <a href="/news" class="level-top"><span>News</span></a>
-    </li>
-    <li class="ui-menu-item level0">
-        <a href="/contacts" class="level-top"><span>Contacts</span></a>
-    </li>
-    </ul>
-</nav>
-
-<script type="text/javascript">
-    require([
-        'jquery',
-        'Smartwave_Megamenu/js/sw_megamenu'
-    ], function ($) {
-        $(".sw-megamenu").swMegamenu();
-    });
-</script>
-</div>
-                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
-                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.links">Account</a>
-                </div>
-                <div class="section-item-content nav-sections-item-content" id="store.links" data-role="content"><!-- Account links --></div>
-                                    </div>
-    </div>
-</header>
-<div class="breadcrumbs">
-    <ul class="items">
-                    <li class="item home">
-                            <a href="https://www.eurofins-technologies.com/" title="Go to Home Page">Home</a>
-                        </li>
-                    <li class="item category20">
-                            <a href="https://www.eurofins-technologies.com/products.html" title="">Products</a>
-                        </li>
-                    <li class="item category21">
-                            <a href="https://www.eurofins-technologies.com/products/allergens.html" title="">Allergens</a>
-                        </li>
-                    <li class="item category98">
-                            <strong>Allergen ELISA Kits</strong>
-                        </li>
-            </ul>
-</div>
-<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+    <main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
 <div class="page-title-wrapper">
     <h1 class="page-title"
          id="page-title-heading"                     aria-labelledby="page-title-heading toolbar-amount"
         >
-        <span class="base" data-ui-id="page-title-wrapper" >Allergen ELISA Kits</span>    </h1>
-    </div>
+        <span class="base" data-ui-id="page-title-wrapper" >过敏原酶联免疫检测试剂盒</span>    </h1>
+  </div>
 <div class="page messages"><div data-placeholder="messages"></div>
 <div data-bind="scope: 'messages'">
     <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
@@ -1294,235 +989,10 @@ require([
             }
     }
 </script>
-</div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="1ovGD4oLqWWJvzvY" /><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
-    <script>
-        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/www.eurofins-technologies.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.eurofins-technologies.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.eurofins-technologies.com\/"};
-    </script>
-    <!-- ko template: getTemplate() --><!-- /ko -->
-    <script type="text/x-magento-init">
-        {
-            "#authenticationPopup": {
-                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"},"amazon-button":{"component":"Amazon_Login\/js\/view\/login-button-wrapper","sortOrder":"0","displayArea":"additional-login-form-fields","config":{"tooltip":"Securely login to our website using your existing Amazon details."}}}}}}            },
-            "*": {
-                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Fwww.eurofins\u002Dtechnologies.com\u002Fpub\u002Fstatic\u002Fversion1582709940\u002Ffrontend\u002FIxenit\u002Feurofins\u002Fen_US\u002Fimages\u002Floader\u002D1.gif"
-            }
-        }
-    </script>
-</div>
-<script type="text/x-magento-init">
-{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":["recently_viewed_product","recently_compared_product"],"customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/account\/editpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"review\/product\/post":["review"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","checkout-fields"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items","instant-purchase"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"multishipping\/checkout\/overviewpost":["cart"],"productattachments\/index\/download":["productattachments"],"productattachments\/index\/attachments":["productattachments"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"rest\/*\/v1\/guest-carts\/*\/collection-point\/select":["collection-point-result"],"rest\/*\/v1\/carts\/mine\/collection-point\/select":["collection-point-result"]},"clientSideSections":["checkout-data","cart-data"],"baseUrls":["https:\/\/www.eurofins-technologies.com\/"]}}}</script>
-<script type="text/x-magento-init">
-{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/www.eurofins-technologies.com\/customer\/section\/load\/","expirableSectionLifetime":60,"expirableSectionNames":["cart"],"cookieLifeTime":"3600","updateSessionUrl":"https:\/\/www.eurofins-technologies.com\/customer\/account\/updateSession\/"}}}</script>
-<script type="text/x-magento-init">
-{"*":{"Magento_Customer\/js\/invalidation-processor":{"invalidationRules":{"website-rule":{"Magento_Customer\/js\/invalidation-rules\/website-rule":{"scopeConfig":{"websiteId":1}}}}}}}</script>
-
-<script type="text/x-magento-init">
-    {
-        "body": {
-            "pageCache": {"url":"https:\/\/www.eurofins-technologies.com\/page_cache\/block\/render\/id\/98\/?p=3&product_list_limit=24","handles":["default","catalog_category_view","catalog_category_view_type_layered","catalog_category_view_id_98"],"originalRequest":{"route":"catalog","controller":"category","action":"view","uri":"\/products\/allergens\/allergen-elisa-kits.html?p=3&product_list_limit=24"},"versionCookieName":"private_content_version"}        }
-    }
-</script>
-<script type="text/x-magento-init">
-    {
-        "body": {
-            "requireCookie": {"noCookieUrl":"https:\/\/www.eurofins-technologies.com\/cookie\/index\/noCookies\/","triggers":[".action.towishlist"]}        }
-    }
-</script>
-
-<div id="layer-product-list">
-                <div class="toolbar toolbar-products" data-mage-init='{"productListToolbarForm":{"mode":"product_list_mode","direction":"product_list_dir","order":"product_list_order","limit":"product_list_limit","modeDefault":"grid","directionDefault":"asc","orderDefault":"position","limitDefault":"8","url":"https:\/\/www.eurofins-technologies.com\/products\/allergens\/allergen-elisa-kits.html?p=3&product_list_limit=24"}}'>
-                    <div class="toolbar-sorter sorter">
-    <label class="sorter-label" for="sorter">Sort By</label>
-    <select id="sorter" data-role="sorter" class="sorter-options">
-                    <option value="position"
-                                    selected="selected"
-                                >
-                Position            </option>
-                    <option value="name"
-                                >
-                Product Name            </option>
-                    <option value="price"
-                                >
-                Price            </option>
-                    <option value="wells"
-                                >
-                孔            </option>
-                    <option value="manufacturer"
-                                >
-                Manufacturer            </option>
-            </select>
-            <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc" data-role="direction-switcher" data-value="desc">
-            <span>Set Descending Direction</span>
-        </a>
-    </div>
-                            <div class="modes">
-            <strong class="modes-label" id="modes-label">View as</strong>
-                        <strong title="Grid"
-                class="modes-mode active mode-grid"
-                data-value="grid">
-                <span>Grid</span>
-            </strong>
-                                    <a class="modes-mode mode-list"
-               title="List"
-               href="#"
-               data-role="mode-switcher"
-               data-value="list"
-               id="mode-list"
-               aria-labelledby="modes-label mode-list">
-                <span>List</span>
-            </a>
-                        </div>
+</div><div class="columns"><div class="column main">
+  <div id="layer-product-list"><div class="toolbar toolbar-products" data-mage-init='{"productListToolbarForm":{"mode":"product_list_mode","direction":"product_list_dir","order":"product_list_order","limit":"product_list_limit","modeDefault":"grid","directionDefault":"asc","orderDefault":"position","limitDefault":"8","url":"https:\/\/www.eurofins-technologies.com\/products\/allergens\/allergen-elisa-kits.html?p=3&product_list_limit=24"}}'><div class="modes"></div>
         
-        <p class="toolbar-amount" id="toolbar-amount">
-            Items <span class="toolbar-number">49</span>-<span class="toolbar-number">49</span> of <span class="toolbar-number">49</span>    </p>
-
-        
-    
-        
-                <div class="pages">
-            <strong class="label pages-label" id="paging-label">Page</strong>
-            <ul class="items pages-items" aria-labelledby="paging-label">
-                            <li class="item pages-item-previous">
-                                        <a class="action  previous" href="https://www.eurofins-technologies.com/products/allergens/allergen-elisa-kits.html?p=2&amp;product_list_limit=24" title="Previous">
-                        <span class="label">Page</span>
-                        <span>Previous</span>
-                    </a>
-                </li>
-            
-            
-            
-                                                <li class="item">
-                        <a href="https://www.eurofins-technologies.com/products/allergens/allergen-elisa-kits.html?p=1&amp;product_list_limit=24" class="page">
-                            <span class="label">Page</span>
-                            <span>1</span>
-                        </a>
-                    </li>
-                                                                <li class="item">
-                        <a href="https://www.eurofins-technologies.com/products/allergens/allergen-elisa-kits.html?p=2&amp;product_list_limit=24" class="page">
-                            <span class="label">Page</span>
-                            <span>2</span>
-                        </a>
-                    </li>
-                                                                <li class="item current">
-                        <strong class="page">
-                            <span class="label">You're currently reading page</span>
-                            <span>3</span>
-                        </strong>
-                    </li>
-                            
-            
-            
-                        </ul>
-        </div>
-        
-    
-    
-
-        <div class="field limiter">
-    <label class="label" for="limiter">
-        <span>Show</span>
-    </label>
-    <div class="control">
-        <select id="limiter" data-role="limiter" class="limiter-options">
-                            <option value="8">
-                    8                </option>
-                            <option value="12">
-                    12                </option>
-                            <option value="24"                    selected="selected">
-                    24                </option>
-                    </select>
-    </div>
-    <span class="limiter-text">per page</span>
-</div>
-    </div>
-    <script type="text/x-magento-init">
-    {
-        "body": {
-            "addToWishlist": {"productType":["simple"]}        }
-    }
-</script>
-        <div class="products wrapper grid columns4  products-grid">
-                <ol class="products list items product-items ">
-                                        <li class="item product product-item">                <div class="product-item-info" data-container="product-grid">
-                                        <div class="product photo product-item-photo">
-                        <a href="https://www.eurofins-technologies.com/catalog/product/view/id/2094/s/sensispec-elisa-egg-white-48-wells/category/98/" tabindex="-1">
-                                                    <img class="product-image-photo default_image porto-lazyload" data-src="static/picture/sensispec-elisa-egg_white-48.jpg" width="285" height="190"/>
-                                                                                                                            </a>
-                                                <!-- Dailydeal Product data -->
-                         
-                       <!-- Dailydeal Product End -->
-                                            </div>
-                    <div class="product details product-item-details">
-                                                                                                                            <strong class="product name product-item-name">
-                                <a class="product-item-link"
-                                   href="https://www.eurofins-technologies.com/catalog/product/view/id/2094/s/sensispec-elisa-egg-white-48-wells/category/98/">
-                                    SENSISpec ELISA 蛋清 48 孔                                </a>
-                            </strong>
-                                                                                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2094" data-price-box="product-id-2094">
-
-    <a href="/customer/account/login"><div class="price-place-holder"><span>登陆询价</span></div></a>
-</div>                                                                        
-                                                <div class="product-item-inner">
-                            <div class="product actions product-item-actions">
-                                                                                                                                <div class="actions-primary">
-                                                                                                                        <div class="stock unavailable"><span></span></div>
-                                                                                                            </div>
-                                                                                            </div>
-                        </div>
-                                            </div>
-                </div>
-                </li>                    </ol>
-    </div>
-            <div class="toolbar toolbar-products" data-mage-init='{"productListToolbarForm":{"mode":"product_list_mode","direction":"product_list_dir","order":"product_list_order","limit":"product_list_limit","modeDefault":"grid","directionDefault":"asc","orderDefault":"position","limitDefault":"8","url":"https:\/\/www.eurofins-technologies.com\/products\/allergens\/allergen-elisa-kits.html?p=3&product_list_limit=24"}}'>
-                    <div class="toolbar-sorter sorter">
-    <label class="sorter-label" for="sorter">Sort By</label>
-    <select id="sorter" data-role="sorter" class="sorter-options">
-                    <option value="position"
-                                    selected="selected"
-                                >
-                Position            </option>
-                    <option value="name"
-                                >
-                Product Name            </option>
-                    <option value="price"
-                                >
-                Price            </option>
-                    <option value="wells"
-                                >
-                孔            </option>
-                    <option value="manufacturer"
-                                >
-                Manufacturer            </option>
-            </select>
-            <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc" data-role="direction-switcher" data-value="desc">
-            <span>Set Descending Direction</span>
-        </a>
-    </div>
-                            <div class="modes">
-            <strong class="modes-label" id="modes-label">View as</strong>
-                        <strong title="Grid"
-                class="modes-mode active mode-grid"
-                data-value="grid">
-                <span>Grid</span>
-            </strong>
-                                    <a class="modes-mode mode-list"
-               title="List"
-               href="#"
-               data-role="mode-switcher"
-               data-value="list"
-               id="mode-list"
-               aria-labelledby="modes-label mode-list">
-                <span>List</span>
-            </a>
-                        </div>
-        
-        <p class="toolbar-amount" id="toolbar-amount">
-            Items <span class="toolbar-number">49</span>-<span class="toolbar-number">49</span> of <span class="toolbar-number">49</span>    </p>
-
-        
-    
-        
-                <div class="pages">
+        <div class="pages">
             <strong class="label pages-label" id="paging-label">Page</strong>
             <ul class="items pages-items" aria-labelledby="paging-label">
                             <li class="item pages-item-previous">
@@ -1555,28 +1025,101 @@ require([
                             
             
             
-                        </ul>
+            </ul>
         </div>
         
     
     
 
         <div class="field limiter">
-    <label class="label" for="limiter">
-        <span>Show</span>
-    </label>
-    <div class="control">
-        <select id="limiter" data-role="limiter" class="limiter-options">
-                            <option value="8">
-                    8                </option>
-                            <option value="12">
-                    12                </option>
-                            <option value="24"                    selected="selected">
-                    24                </option>
-                    </select>
+    <label class="label" for="limiter"></label>
+    <script type="text/x-magento-init">{
+        "body": {
+            "addToWishlist": {"productType":["simple"]}        }
+    }
+    </script>
+        </div>
     </div>
-    <span class="limiter-text">per page</span>
-</div>
+    <div class="products wrapper grid columns4  products-grid">
+                <ol class="products list items product-items ">
+                                        <li class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                                        <div class="product photo product-item-photo">
+                        <a href="https://www.eurofins-technologies.com/catalog/product/view/id/2094/s/sensispec-elisa-egg-white-48-wells/category/98/" tabindex="-1">
+                                                    <img class="product-image-photo default_image porto-lazyload" data-src="static/picture/sensispec-elisa-egg_white-48.jpg" width="285" height="190"/>
+                                          </a>
+                                                <!-- Dailydeal Product data -->
+                         
+                       <!-- Dailydeal Product End -->
+                                          </div>
+                    <div class="product details product-item-details">
+                                                                                                                            <strong class="product name product-item-name">
+                                <a class="product-item-link"
+                                   href="https://www.eurofins-technologies.com/catalog/product/view/id/2094/s/sensispec-elisa-egg-white-48-wells/category/98/">
+                                    SENSISpec ELISA 蛋清 48 孔                                </a>
+                            </strong>
+                                                                                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2094" data-price-box="product-id-2094">
+
+    <a href="/customer/account/login">
+    <div class="price-place-holder"><span>询价</span></div>
+    </a>
+</div>                                                                        
+                                                <div class="product-item-inner">
+                            <div class="product actions product-item-actions">
+                                                                                                                                <div class="actions-primary">
+                                                                                                                        <div class="stock unavailable"><span></span></div>
+                                                                                                            </div>
+                                                  </div>
+                        </div>
+                                          </div>
+                </div>
+                </li>                    </ol>
+    </div>
+            <div class="toolbar toolbar-products" data-mage-init='{"productListToolbarForm":{"mode":"product_list_mode","direction":"product_list_dir","order":"product_list_order","limit":"product_list_limit","modeDefault":"grid","directionDefault":"asc","orderDefault":"position","limitDefault":"8","url":"https:\/\/www.eurofins-technologies.com\/products\/allergens\/allergen-elisa-kits.html?p=3&product_list_limit=24"}}'>
+              <div class="toolbar-sorter sorter">
+    <label class="sorter-label" for="sorter"></label>
+              </div>
+                            <div class="pages">
+            <strong class="label pages-label" id="paging-label">Page</strong>
+            <ul class="items pages-items" aria-labelledby="paging-label">
+                            <li class="item pages-item-previous">
+                                        <a class="action  previous" href="https://pengoo2019.github.io/p2" title="Previous">
+                        <span class="label">Page</span>
+                        <span>Previous</span>
+                    </a>
+                </li>
+            
+            
+            
+                                                <li class="item">
+                        <a href="https://pengoo2019.github.io/p1" class="page">
+                            <span class="label">Page</span>
+                            <span>1</span>
+                        </a>
+                    </li>
+                                                                <li class="item">
+                        <a href="https://pengoo2019.github.io/p2" class="page">
+                            <span class="label">Page</span>
+                            <span>2</span>
+                        </a>
+                    </li>
+                                                                <li class="item current">
+                        <strong class="page">
+                            <span class="label">You're currently reading page</span>
+                            <span>3</span>
+                        </strong>
+                    </li>
+                            
+            
+            
+                  </ul>
+        </div>
+        
+    
+    
+
+        <div class="field limiter">
+    <label class="label" for="limiter"></label>
+        </div>
     </div>
             <script type="text/x-magento-init">
         {
@@ -1695,27 +1238,23 @@ require([
 </script>
 </div>
 </div><div class="sidebar sidebar-main">	<div class="block-category-list">
-		<div class="block-title"><strong>Allergens</strong></div>
+		<div class="block-title"><strong>过敏原检测</strong></div>
 		<div class="block-content">
 			<ol class="items">
 			            <li class="item">
-                <a href="https://www.eurofins-technologies.com/products/allergens/allergen-elisa-kits.html">Allergen ELISA Kits</a>
+                <a href="https://pengoo2019.github.io/p1">过敏原酶联免疫检测试剂盒</a>
             </li>
                     <li class="item">
-                <a href="https://www.eurofins-technologies.com/products/allergens/allergen-lateral-flow-tests.html">Allergen Lateral Flow Tests</a>
+                <a href="https://pengoo2019.github.io/p4">过敏原快速检测试纸条</a>
             </li>
                     <li class="item">
-                <a href="https://www.eurofins-technologies.com/products/allergens/allergen-spike-solutions.html">Allergen Spike Solutions</a>
-            </li>
-                    <li class="item">
-                <a href="https://www.eurofins-technologies.com/products/allergens/swabbing-kit.html">Swabbing Kits</a>
-            </li>
-                </ol>
+                <a href="https://pengoo2019.github.io/std">过敏原标准品</a></li>
+                    </ol>
     </div>
 </div>
 <div class="block-category-list">
     <div class="block-title">
-        <strong>Allergen ELISA Kits</strong>
+        <strong>过敏原酶联免疫检测试剂盒</strong>
     </div>
             <div class="block-content">
             <ol class="items">
@@ -1785,15 +1324,13 @@ require([
                 </li>
                             <li class="item">核桃<a href="https://www.eurofins-technologies.com/products/allergens/allergen-elisa-kits/walnut.html"></a>
                 </li>
-                        </ol>
+              </ol>
         </div>
     </div>
 
 <div id="layered-filter-block-container" class="layered-filter-block-container">
             <div class="block filter" id="layered-filter-block" data-mage-init='{"collapsible":{"openedState": "active", "collapsible": true, "active": false, "collateral": { "openedState": "filter-active", "element": "body" } }}'>
-        <div class="block-title filter-title" data-count="0">
-            <strong data-role="title">Shop By</strong>
-        </div>
+        <div class="block-title filter-title" data-count="0"></div>
         <div class="block-content filter-content" data-mage-init='{"mpLayer": {&quot;active&quot;:[&quot;id&quot;,&quot;p&quot;,&quot;product_list_limit&quot;],&quot;params&quot;:{&quot;id&quot;:&quot;98&quot;,&quot;p&quot;:&quot;3&quot;,&quot;product_list_limit&quot;:&quot;24&quot;},&quot;slider&quot;:[]}}' >
             
             
@@ -1805,7 +1342,7 @@ require([
                 });
             </script>
             
-                    </div>
+              </div>
     </div>
 </div>
 <div id="ln_overlay" class="ln_overlay">
@@ -1814,105 +1351,7 @@ require([
     </div>
 </div>
 </div></div></main><footer class="page-footer"><div class="footer">
-<div class="custom-block"><div class="footer" style="background-image: url(static/images/footer_bg.png); background-size: 100% 80px; height: 80px; width: 100%;"></div></div>    <div class="footer-middle footer-middle-2">
-        <div class="container">
-            <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-top: 40px;"><div class="block">
-    <div class="block-title"><strong><span>Let Us Help You</span></strong></div>
-    <div class="block-content">
-        <ul class="links">
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/customer/account" title="My Account">My Account</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/about-us.html" title="About us">About Us</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/order-and-shipping" title="Orders and Shipping">Orders and Shipping</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/payment-information" title="Payment Information">Payment Information</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/privacy-statement" title="Privacy Statement">Privacy Statement</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/terms-and-conditions" title="General Terms and Conditions">General Terms and Conditions</a></li>
-        </ul>
-    </div>
-</div></div><div class="col-xs-12 col-sm-6 col-md-3" style="margin-top: 40px;"><div class="block">
-<div class="block-title"><strong>Contact Information</strong></div>
-<div class="block-content">
-<ul class="contact-info">
-<li><b>Eurofins Technologies</b></li>
-<li><em class="porto-icon-location"></em>
-<p><b>Address:</b><br />F&oacute;ti&nbsp;&uacute;t 56.<br />1047 Budapest<br />Hungary</p>
-</li>
-<li><em class="porto-icon-mail"></em>
-<p><b>Email:</b><br /><a href="mailto:technologies.hu@eurofins.com">technologies.hu@eurofins.com</a></p>
-</li>
-<li><em class="porto-icon-clock"></em>
-<p><b>Working Days/Hours:</b><br />Mon - Fri / 8:00AM - 6:00PM CET</p>
-</li>
-</ul>
-</div>
-</div></div><div class="col-xs-12 col-sm-6 col-md-3" style="margin-top: 40px;"><div class="block">
-    <div class="block-title"><strong>Our Product Range</strong></div>
-    <div class="block-content">
-        <ul class="features">
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/allergens.html">Allergens</a></li>
-            <li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/food-pathogens.html">Food Pathogens</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/gmos.html">GMOs</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/mycotoxins.html">Mycotoxins</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/veterinary-drug-residues.html">Veterinary Drug Residues</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/water.html">Water</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/animal-species.html">Animal Species</a></li>
-<li><em class="porto-icon-right-open theme-color"></em><a href="https://www.eurofins-technologies.com/products/veterinary-diagnostics.html">Veterinary Diagnostics</a></li>
-        </ul>
-    </div>
-</div></div><div class="col-xs-12 col-sm-6 col-md-3" style="margin-top: 40px;"><div class="block">
-    <div class="block-title"><img src="static/picture/eurofins_technologies.png" alt="" /></div>
-    <div class="block-content">
-        <p style="margin-bottom:22px;">Get all the latest information on Events, Sales and Offers.<br/>Sign up for our newsletter today:</p>
-        <div class="block newsletter">
-  <div class="title"><strong>Newsletter</strong></div>
-  <div class="content">
-    <form class="form privacy-subscribe"
-          novalidate
-          action="https://www.eurofins-technologies.com/newsletter/subscriber/new/"
-          method="post"
-          data-mage-init='{"validation": {"errorClass": "mage-error"}}'
-          id="newsletter-validate-detail">
-      
-      <div class="field newsletter">
-        <div class="control">
-          <input name="email" type="email" id="newsletter"
-                 placeholder="Enter&#x20;your&#x20;email&#x20;address"
-                 data-validate="{required:true, 'validate-email':true}" />
-          <div class="actions">
-            <button class="action subscribe primary"
-                    title="Subscribe"
-                    type="submit">
-              <span>Subscribe</span>
-            </button>
-          </div>       
-        </div>
-      </div>
-      
-      <div class="field privacy">
-        <input name="privacy"
-               type="checkbox"
-               id="privacy"
-               data-validate="{required: true}" />
-        <label for="privacy">
-          <a href="/privacy-statement">I accept the terms and conditions of the Privacy Statement</a>
-        </label>
-      </div>
-    
-    </form>
-  </div>
-</div>
-    </div>
-
-   <div class="block-content" style="text-align: center; padding-top: 10px;">
-      <img style="width: 52px; height: 42px; padding: 0px 10px 10px 10px; cursor: pointer;" onMouseOver="this.src='static/picture/linkedin_logo_small_hover.png'" onMouseOut="this.src='https://www.eurofins-technologies.com/pub/media/wysiwyg/eurofins/cms/footer/LinkedIN_logo_small.png'" src="https://www.eurofins-technologies.com/pub/media/wysiwyg/eurofins/cms/footer/LinkedIN_logo_small.png" alt="LinkedIN logo" onClick="window.open('https://www.linkedin.com/company/eurofins-technologies/');"/> 
-
-      <img style="width: 66px; height: 56px; padding: 7px 10px 3px 10px; cursor: pointer;" onMouseOver="this.src='static/picture/youtube_logo_hover.png'" onMouseOut="this.src='https://www.eurofins-technologies.com/pub/media/wysiwyg/eurofins/cms/footer/YouTube_logo.png'" src="https://www.eurofins-technologies.com/pub/media/wysiwyg/eurofins/cms/footer/YouTube_logo.png" alt="YouTube logo" onClick="window.open('https://www.youtube.com/channel/UCibtyWMA7QbLBbRdJFknnTg/')"; /> 
-   </div>
-
-</div>
-</div>            </div>
-        </div>
-    </div>
+<div class="custom-block"><div class="footer" style="background-image: url(static/images/footer_bg.png); background-size: 100% 80px; height: 80px; width: 100%;"></div></div>    
 </div>
 <a href="javascript:void(0)" id="totop"><em class="porto-icon-up-open"></em></a>
 </footer><script type="text/x-magento-init">
